@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { getCustomers, createCustomer, updateCustomer, deleteCustomer } = require('../controllers/customer.controller');
 
 
-router.get('/',getCustomers);
+router.get('/customers',getCustomers);
 
 router.post('/customers',createCustomer);
 
